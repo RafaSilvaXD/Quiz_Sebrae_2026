@@ -1,0 +1,715 @@
+[
+  {
+    "Id": 1,
+    "Type": 0,
+    "Text": "Qual é o principal objetivo do Startup Day?",
+    "Answer": [
+      {
+        "Correct": false,
+        "Text": "Vender produtos inovadores"
+      },
+      {
+        "Correct": true,
+        "Text": "Fomentar o ecossistema de inovação e empreendedorismo"
+      },
+      {
+        "Correct": false,
+        "Text": "Oferecer consultoria exclusiva para grandes empresas"
+      },
+      {
+        "Correct": false,
+        "Text": "Focar exclusivamente no desenvolvimento de produtos tecnológicos"
+      }
+    ]
+  },
+  {
+    "Id": 2,
+    "Type": 0,
+    "Text": "O Startup Day é promovido por qual instituição?",
+    "Answer": [
+      {
+        "Correct": false,
+        "Text": "Porto Digital"
+      },
+      {
+        "Correct": true,
+        "Text": "SEBRAE"
+      },
+      {
+        "Correct": false,
+        "Text": "Campus Party"
+      },
+      {
+        "Correct": false,
+        "Text": "Ministério da Ciência e Tecnologia"
+      }
+    ]
+  },
+  {
+    "Id": 3,
+    "Type": 0,
+    "Text": "Qual é o foco principal das startups participantes do evento?",
+    "Answer": [
+      {
+        "Correct": false,
+        "Text": "Vender produtos físicos"
+      },
+      {
+        "Correct": true,
+        "Text": "Apresentar soluções inovadoras e conectar-se com o ecossistema"
+      },
+      {
+        "Correct": false,
+        "Text": "Realizar workshops técnicos"
+      },
+      {
+        "Correct": false,
+        "Text": "Promover eventos culturais"
+      }
+    ]
+  },
+  {
+    "Id": 4,
+    "Type": 0,
+    "Text": "O que os visitantes podem esperar ao conhecer as startups no evento?",
+    "Answer": [
+      {
+        "Correct": false,
+        "Text": "Apenas palestras e apresentações"
+      },
+      {
+        "Correct": true,
+        "Text": "Interação direta com soluções inovadoras e oportunidades de networking"
+      },
+      {
+        "Correct": false,
+        "Text": "Exposição de produtos antigos"
+      },
+      {
+        "Correct": false,
+        "Text": "Cursos de formação técnica"
+      }
+    ]
+  },
+  {
+    "Id": 5,
+    "Type": 0,
+    "Text": "Quantas startups estão expondo do Startup Day Caruaru 2025?",
+    "Answer": [
+      {
+        "Correct": false,
+        "Text": "5"
+      },
+      {
+        "Correct": true,
+        "Text": "10"
+      },
+      {
+        "Correct": false,
+        "Text": "15"
+      },
+      {
+        "Correct": false,
+        "Text": "20"
+      }
+    ]
+  },
+  {
+    "Id": 6,
+    "Type": 0,
+    "Text": "Qual é o principal desafio que as startups enfrentam?",
+    "Answer": [
+      {
+        "Correct": false,
+        "Text": "Falta de ideias"
+      },
+      {
+        "Correct": true,
+        "Text": "Dificuldade em encontrar investidores e validar seus produtos"
+      },
+      {
+        "Correct": false,
+        "Text": "Excesso de lucro"
+      },
+      {
+        "Correct": false,
+        "Text": "Pouca concorrência no mercado"
+      }
+    ]
+  },
+  {
+    "Id": 7,
+    "Type": 0,
+    "Text": "O que os visitantes podem aprender ao conversar com as startups no evento?",
+    "Answer": [
+      {
+        "Correct": false,
+        "Text": "Somente informações sobre os produtos das startups"
+      },
+      {
+        "Correct": true,
+        "Text": "Experiências sobre inovação, desafios do empreendedorismo e transformação de ideias em negócios"
+      },
+      {
+        "Correct": false,
+        "Text": "Exclusivamente sobre modelos de financiamento para startups"
+      },
+      {
+        "Correct": false,
+        "Text": "Conceitos básicos de marketing tradicional"
+      }
+    ]
+  },
+  {
+    "Id": 8,
+    "Type": 0,
+    "Text": "Bruno Stefani, palestrante do evento, foi diretor global de inovação de qual empresa?",
+    "Answer": [
+      {
+        "Correct": false,
+        "Text": "Google"
+      },
+      {
+        "Correct": false,
+        "Text": "Microsoft"
+      },
+      {
+        "Correct": true,
+        "Text": "AB InBev (Ambev)"
+      },
+      {
+        "Correct": false,
+        "Text": "Amazon"
+      }
+    ]
+  },
+  {
+    "Id": 9,
+    "Type": 0,
+    "Text": "Qual palestrante do evento é ex-ministro da educação?",
+    "Answer": [
+      {
+        "Correct": true,
+        "Text": "Mendonça Filho"
+      },
+      {
+        "Correct": false,
+        "Text": "Dilson Cavalcanti"
+      },
+      {
+        "Correct": false,
+        "Text": "Paulo Muniz"
+      },
+      {
+        "Correct": false,
+        "Text": "Genésio Gomes da Cruz"
+      }
+    ]
+  },
+  {
+    "Id": 10,
+    "Type": 0,
+    "Text": "Quem é reitor da Asces-Unita e estará no painel sobre inovação e educação?",
+    "Answer": [
+      {
+        "Correct": false,
+        "Text": "João Moisés"
+      },
+      {
+        "Correct": true,
+        "Text": "Paulo Muniz"
+      },
+      {
+        "Correct": false,
+        "Text": "Heraldo Ourem"
+      },
+      {
+        "Correct": false,
+        "Text": "Conceição Moraes"
+      }
+    ]
+  },
+  {
+    "Id": 11,
+    "Type": 0,
+    "Text": "O que Heraldo Ourem, palestrante do evento, faz no Porto Digital?",
+    "Answer": [
+      {
+        "Correct": true,
+        "Text": "Diretor de Inovação e Competitividade Empresarial"
+      },
+      {
+        "Correct": false,
+        "Text": "CEO da empresa líder do Porto Digital"
+      },
+      {
+        "Correct": false,
+        "Text": "Diretor de Marketing"
+      },
+      {
+        "Correct": false,
+        "Text": "Fundador do Porto Digital"
+      }
+    ]
+  },
+  {
+    "Id": 12,
+    "Type": 0,
+    "Text": "O que significa MVP no contexto de startups?",
+    "Answer": [
+      {
+        "Correct": false,
+        "Text": "Produto mais valioso"
+      },
+      {
+        "Correct": true,
+        "Text": "Produto mínimo viável"
+      },
+      {
+        "Correct": false,
+        "Text": "Máquina virtual programada"
+      },
+      {
+        "Correct": false,
+        "Text": "Método de validação de produto"
+      }
+    ]
+  },
+  {
+    "Id": 13,
+    "Type": 0,
+    "Text": "Qual dessas tecnologias está mais associada à Indústria 4.0?",
+    "Answer": [
+      {
+        "Correct": true,
+        "Text": "Impressão 3D, Internet das Coisas e Inteligência Artificial"
+      },
+      {
+        "Correct": false,
+        "Text": "Telégrafos e computadores antigos"
+      },
+      {
+        "Correct": false,
+        "Text": "Carros movidos a carvão"
+      },
+      {
+        "Correct": false,
+        "Text": "Televisores de tubo"
+      }
+    ]
+  },
+  {
+    "Id": 14,
+    "Type": 0,
+    "Text": "O que é um pitch no mundo das startups?",
+    "Answer": [
+      {
+        "Correct": false,
+        "Text": "Um robô de atendimento ao cliente"
+      },
+      {
+        "Correct": true,
+        "Text": "Uma apresentação rápida para vender uma ideia"
+      },
+      {
+        "Correct": false,
+        "Text": "Uma ferramenta de gestão de tempo"
+      },
+      {
+        "Correct": false,
+        "Text": "Uma plataforma de recrutamento"
+      }
+    ]
+  },
+  {
+    "Id": 15,
+    "Type": 0,
+    "Text": "O que é o Vale do Silício?",
+    "Answer": [
+      {
+        "Correct": false,
+        "Text": "Um parque de diversões para startups"
+      },
+      {
+        "Correct": true,
+        "Text": "Uma região nos EUA conhecida por suas empresas de tecnologia"
+      },
+      {
+        "Correct": false,
+        "Text": "Uma marca de computadores inovadores"
+      },
+      {
+        "Correct": false,
+        "Text": "Um laboratório de desenvolvimento de vacinas"
+      }
+    ]
+  },
+  {
+    "Id": 16,
+    "Type": 0,
+    "Text": "O que faz uma aceleradora?",
+    "Answer": [
+      {
+        "Correct": false,
+        "Text": "Investe diretamente em startups"
+      },
+      {
+        "Correct": true,
+        "Text": "Oferece suporte para startups crescerem rápido"
+      },
+      {
+        "Correct": false,
+        "Text": "Apenas fornece empréstimos"
+      },
+      {
+        "Correct": false,
+        "Text": "Cria planos de negócios para grandes empresas"
+      }
+    ]
+  },
+  {
+    "Id": 17,
+    "Type": 0,
+    "Text": "O que caracteriza um investidor-anjo?",
+    "Answer": [
+      {
+        "Correct": false,
+        "Text": "Investe apenas em grandes empresas"
+      },
+      {
+        "Correct": true,
+        "Text": "Fornece capital e mentoria para startups"
+      },
+      {
+        "Correct": false,
+        "Text": "Empresta dinheiro com juros altos"
+      },
+      {
+        "Correct": false,
+        "Text": "Atua apenas como consultor"
+      }
+    ]
+  },
+  {
+    "Id": 18,
+    "Type": 0,
+    "Text": "O que significa a sigla IoT?",
+    "Answer": [
+      {
+        "Correct": false,
+        "Text": "Inteligência Operacional Total"
+      },
+      {
+        "Correct": true,
+        "Text": "Internet das Coisas"
+      },
+      {
+        "Correct": false,
+        "Text": "Inovação e Organização Tecnológica"
+      },
+      {
+        "Correct": false,
+        "Text": "Investimento Online Total"
+      }
+    ]
+  },
+  {
+    "Id": 19,
+    "Type": 0,
+    "Text": "O que é um 'unicórnio' no mundo das startups?",
+    "Answer": [
+      {
+        "Correct": false,
+        "Text": "Uma startup que ainda não lançou seu produto"
+      },
+      {
+        "Correct": true,
+        "Text": "Uma startup avaliada em mais de 1 bilhão de dólares"
+      },
+      {
+        "Correct": false,
+        "Text": "Uma empresa que trabalha com tecnologia de realidade aumentada"
+      },
+      {
+        "Correct": false,
+        "Text": "Um investidor que financia múltiplos negócios"
+      }
+    ]
+  },
+  {
+    "Id": 20,
+    "Type": 0,
+    "Text": "Qual dessas tecnologias é usada na Realidade Virtual?",
+    "Answer": [
+      {
+        "Correct": true,
+        "Text": "Óculos VR"
+      },
+      {
+        "Correct": false,
+        "Text": "Calculadoras científicas"
+      },
+      {
+        "Correct": false,
+        "Text": "Telescópios espaciais"
+      },
+      {
+        "Correct": false,
+        "Text": "Câmeras analógicas"
+      }
+    ]
+  },
+  {
+    "Id": 21,
+    "Type": 0,
+    "Text": "O que é bootstrapping em uma startup?",
+    "Answer": [
+      {
+        "Correct": true,
+        "Text": "Um processo de investimento com capital próprio, sem financiamento externo"
+      },
+      {
+        "Correct": false,
+        "Text": "Uma técnica para contratar programadores"
+      },
+      {
+        "Correct": false,
+        "Text": "Um método para comprar equipamentos mais baratos"
+      },
+      {
+        "Correct": false,
+        "Text": "Um software de gestão empresarial"
+      }
+    ]
+  },
+  {
+    "Id": 22,
+    "Type": 0,
+    "Text": "Qual dessas empresas é um exemplo clássico de startup de sucesso?",
+    "Answer": [
+      {
+        "Correct": true,
+        "Text": "Uber"
+      },
+      {
+        "Correct": false,
+        "Text": "Kodak"
+      },
+      {
+        "Correct": false,
+        "Text": "Blockbuster"
+      },
+      {
+        "Correct": false,
+        "Text": "Xerox"
+      }
+    ]
+  },
+  {
+    "Id": 23,
+    "Type": 0,
+    "Text": "Qual tecnologia está sendo usada para criar este jogo no evento?",
+    "Answer": [
+      {
+        "Correct": true,
+        "Text": "Realidade Virtual"
+      },
+      {
+        "Correct": false,
+        "Text": "Holografia Interativa"
+      },
+      {
+        "Correct": false,
+        "Text": "Televisão 3D"
+      },
+      {
+        "Correct": false,
+        "Text": "Inteligência Artificial"
+      }
+    ]
+  },
+  {
+    "Id": 24,
+    "Type": 0,
+    "Text": "O que é uma 'pivotagem' de uma startup?",
+    "Answer": [
+      {
+        "Correct": false,
+        "Text": "Quando a startup expande para novos mercados"
+      },
+      {
+        "Correct": true,
+        "Text": "Quando a empresa muda sua estratégia ou modelo de negócio"
+      },
+      {
+        "Correct": false,
+        "Text": "Um tipo de financiamento inicial"
+      },
+      {
+        "Correct": false,
+        "Text": "O momento em que a startup começa a lucrar"
+      }
+    ]
+  },
+  {
+    "Id": 25,
+    "Type": 0,
+    "Text": "O que significa a sigla 'AI' em inglês?",
+    "Answer": [
+      {
+        "Correct": true,
+        "Text": "Artificial Intelligence (Inteligência Artificial)"
+      },
+      {
+        "Correct": false,
+        "Text": "Automated Interface (Interface Automatizada)"
+      },
+      {
+        "Correct": false,
+        "Text": "Advanced Innovation (Inovação Avançada)"
+      },
+      {
+        "Correct": false,
+        "Text": "Algorithmic Integration (Integração Algorítmica)"
+      }
+    ]
+  },
+  {
+    "Id": 26,
+    "Type": 0,
+    "Text": "Qual dessas tecnologias é um exemplo de inteligência artificial?",
+    "Answer": [
+      {
+        "Correct": true,
+        "Text": "Assistente virtual como Siri ou Alexa"
+      },
+      {
+        "Correct": false,
+        "Text": "Calculadora científica"
+      },
+      {
+        "Correct": false,
+        "Text": "Televisão 4K"
+      },
+      {
+        "Correct": false,
+        "Text": "Impressora 3D"
+      }
+    ]
+  },
+  {
+    "Id": 27,
+    "Type": 0,
+    "Text": "O que é 'machine learning'?",
+    "Answer": [
+      {
+        "Correct": false,
+        "Text": "Um tipo de robô que aprende a andar"
+      },
+      {
+        "Correct": true,
+        "Text": "Um sistema que permite aos computadores aprenderem com dados"
+      },
+      {
+        "Correct": false,
+        "Text": "Uma técnica para consertar máquinas"
+      },
+      {
+        "Correct": false,
+        "Text": "Um jogo de quebra-cabeças"
+      }
+    ]
+  },
+  {
+    "Id": 28,
+    "Type": 0,
+    "Text": "O que é um 'chatbot'?",
+    "Answer": [
+      {
+        "Correct": false,
+        "Text": "Um robô que limpa a casa"
+      },
+      {
+        "Correct": true,
+        "Text": "Um programa de computador que simula conversas humanas"
+      },
+      {
+        "Correct": false,
+        "Text": "Um tipo de jogo de tabuleiro"
+      },
+      {
+        "Correct": false,
+        "Text": "Um dispositivo de realidade virtual"
+      }
+    ]
+  },
+  {
+    "Id": 29,
+    "Type": 0,
+    "Text": "Qual é a primeira etapa no desenvolvimento de um jogo?",
+    "Answer": [
+      {
+        "Correct": false,
+        "Text": "Criar os gráficos e personagens do jogo."
+      },
+      {
+        "Correct": true,
+        "Text": "Definir o conceito, público-alvo e testar ideias iniciais."
+      },
+      {
+        "Correct": false,
+        "Text": "Programar todas as mecânicas do jogo."
+      },
+      {
+        "Correct": false,
+        "Text": "Lançar o jogo diretamente nas plataformas digitais."
+      }
+    ]
+  },
+  {
+    "Id": 30,
+    "Type": 0,
+    "Text": "Para que servem os testes de um jogo antes do lançamento?",
+    "Answer": [
+      {
+        "Correct": false,
+        "Text": "Apenas para garantir que os gráficos estão bonitos."
+      },
+      {
+        "Correct": true,
+        "Text": "Para descobrir e corrigir bugs, melhorar o desempenho e garantir uma boa experiência."
+      },
+      {
+        "Correct": false,
+        "Text": "Para divulgar o jogo e atrair mais jogadores."
+      },
+      {
+        "Correct": false,
+        "Text": "Para adicionar novos personagens e fases antes do lançamento."
+      }
+    ]
+  },
+  {
+    "Id": 31,
+    "Type": 0,
+    "Text": "Depois que um jogo é lançado, o que pode acontecer na fase de pós-lançamento?",
+    "Answer": [
+      {
+        "Correct": false,
+        "Text": "Nada mais precisa ser feito, pois o jogo já está pronto."
+      },
+      {
+        "Correct": false,
+        "Text": "Os desenvolvedores começam a criar outro jogo sem olhar para o que já foi lançado."
+      },
+      {
+        "Correct": true,
+        "Text": "São lançadas atualizações, correções de bugs e novos conteúdos para manter o interesse dos jogadores."
+      },
+      {
+        "Correct": false,
+        "Text": "O jogo é apagado da internet e não pode mais ser jogado."
+      }
+    ]
+  }
+]

@@ -1,0 +1,98 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Default Local Group
+  m_EditorClassIdentifier: 
+  m_GroupName: Default Local Group
+  m_GUID: 0dab33235246beb4c8f51cd5da0d3cf8
+  m_SerializeEntries:
+  - m_GUID: 1ab6ac899e1fd6743ae20b224944aa36
+    m_Address: Assets/Props/Foguete.wav
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 20b6f0e4e35593b4899c56d473b6119e
+    m_Address: TextQuiz
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2acac73ca9fe8c840b088f9d275a71a8
+    m_Address: Assets/Scripts/Bridge/Glass.wav
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2c2f86467df52c347ae7f8657b9db449
+    m_Address: Assets/Props/Posicao.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3b3943ffd2f992e41b348364ca709d94
+    m_Address: Assets/Scripts/Bridge/broken_glass.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 527479213362aee4db85655ee624d496
+    m_Address: Assets/Scripts/Bridge/Broken.flac
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 64147da4d65e5914c9a76e2e1066eb31
+    m_Address: Assets/Props/Jogador4.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 72f46026b17ad0d408bf7a93fc2fbb99
+    m_Address: Assets/Acerto_Pergunta.wav
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7455fd4a40f49654e93ceb3f7d768934
+    m_Address: Assets/Props/Erro_Pergunta.wav
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 74be3f0563235394e869d86ecc83f9d6
+    m_Address: Assets/Props/Jogador3.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9d52298a22e99f64da0dbb48102659c2
+    m_Address: Assets/Props/1742626925433529551-250159366680668.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a70b423e87bd9bf4a831283bbaca6719
+    m_Address: Assets/Scripts/Bridge/glass.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: cd518df9c38ab2b43b433235e3234e3c
+    m_Address: Assets/Props/Jogador2.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d9307116245babe4db6c1dd5bd1d8e71
+    m_Address: Assets/Props/Jogador1.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fcabc5740f3a3364c8e72abe5e7d15f5
+    m_Address: Assets/Scripts/Network/QuizPanel.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 86a35bff5d5638748b1ae0aa74e152a7, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 4d24eaab16bd02845b4e27162a2c6254, type: 2}
+    - {fileID: 11400000, guid: 56142a8c9cd63314aa085ff160c02dbc, type: 2}
