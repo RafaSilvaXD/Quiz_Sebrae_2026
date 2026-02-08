@@ -6,12 +6,23 @@ public class DoorController : MonoBehaviour
     [SerializeField] private float _time;
     [SerializeField] private Vector3 _direction;
     [SerializeField] private float _distance;
-    public void Open()
+    public void OpenedDoor()
     {
         GetComponent<AudioSource>().Play();
         StartCoroutine(Coroutine_Open());
     }
 
+    void OnEnable()
+    {
+        Debug.Log(EventManager.Instance);
+        EventManager.Instance.OnOpenDoor += OpenedDoor;
+    }
+
+    void OnDisable()
+    {
+        EventManager.Instance.OnOpenDoor -= OpenedDoor;
+    }
+    
     private IEnumerator Coroutine_Open()
     {
         float elapsedTime = 0;

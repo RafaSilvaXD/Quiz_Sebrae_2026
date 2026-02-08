@@ -5,7 +5,7 @@ using System.Threading;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
 
-public class BotController : NetworkBehaviour
+public class LoopitaNetworkController : NetworkBehaviour,ILoopitaController
 {
     private Vector3 _startPos;
     private CancellationTokenSource _cancellationFloatTokenSour;
@@ -14,13 +14,38 @@ public class BotController : NetworkBehaviour
     [SerializeField] private AudioSource _audioSource;
     [SerializeField] private Transform _botHead;
     [SerializeField] private float _moveAmplitude;
-    [SerializeField] private float _speed; 
+    [SerializeField] private float _speed;
 
     private void Start()
     {
         Move().Forget();
     }
-    private async UniTaskVoid Move()
+    
+    [Client] 
+    public void Rpc_MovePointB()
+    {
+        var point = GameObject.Find("LoopitaB");
+        transform.LookAt(point.transform, Vector3.up);
+        transform.position = point.transform.position;
+        _audioSource?.PlayOneShot(_audiosStartRef[1].LoadAssetAsync<AudioClip>().WaitForCompletion());
+
+    }
+    [ClientRpc]
+    public async void Rpc_PlayStartAudio()
+    {
+        _audioSource?.PlayOneShot(_audiosStartRef[0].LoadAssetAsync<AudioClip>().WaitForCompletion());
+        await UniTask.WaitUntil(() => !_audioSource.isPlaying);
+        await UniTask.Delay(TimeSpan.FromSeconds(0.4f));
+        EventManager.Instance.OnOpenDoor?.Invoke();
+    }
+    [ClientRpc]
+    public void Rpc_TalkPlayer(int index)
+    {
+        var clip = Addressables.LoadAssetAsync<AudioClip>(_audiosPlayerRef[index - 1]).WaitForCompletion();
+        _audioSource?.PlayOneShot(clip);
+    }
+
+    public async UniTaskVoid Move()
     {
         if (_cancellationFloatTokenSour != null)
         {
@@ -56,34 +81,8 @@ public class BotController : NetworkBehaviour
             await UniTask.NextFrame();
         }
     }
-    [Client] 
-    public void Rpc_MovePointB()
-    {
-        var point = GameObject.Find("LoopitaB");
-        transform.LookAt(point.transform, Vector3.up);
-        transform.position = point.transform.position;
-        _audioSource?.PlayOneShot(_audiosStartRef[1].LoadAssetAsync<AudioClip>().WaitForCompletion());
-
-    }
     public void PlayStartAudio()
     {
         Rpc_PlayStartAudio();
-    }
-    [ClientRpc]
-    public async void Rpc_PlayStartAudio()
-    {
-        _audioSource?.PlayOneShot(_audiosStartRef[0].LoadAssetAsync<AudioClip>().WaitForCompletion());
-        await UniTask.WaitUntil(() => !_audioSource.isPlaying);
-        await UniTask.Delay(TimeSpan.FromSeconds(0.4f));
-        foreach (var door in FindObjectsByType<DoorController>(FindObjectsSortMode.None))
-        {
-            door.Open();
-        }
-    }
-    [ClientRpc]
-    public void Rpc_TalkPlayer(int index)
-    {
-        var clip = Addressables.LoadAssetAsync<AudioClip>(_audiosPlayerRef[index - 1]).WaitForCompletion();
-        _audioSource?.PlayOneShot(clip);
     }
 }

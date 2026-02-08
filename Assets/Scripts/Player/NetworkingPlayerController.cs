@@ -69,10 +69,7 @@ public class NetworkingPlayerController : NetworkBehaviour, IPlayer
         }
         else
         {
-            foreach(var startPoint in FindObjectsByType<StartPointController>(FindObjectsSortMode.None).Where(x=>x.Index != _number))
-            {
-                Destroy(startPoint.gameObject);
-            }
+            EventManager.Instance.OnStartPointController?.Invoke(_number);
             var input = new XRIDefaultInputActions();
             input.Enable();
             _camera.positionAction = input.XRIHead.Position;

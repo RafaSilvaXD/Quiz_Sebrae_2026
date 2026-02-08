@@ -4013,7 +4013,7 @@ GameObject:
   - component: {fileID: 5842595682456317096}
   m_Layer: 2
   m_Name: NetworkingPlayer
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
