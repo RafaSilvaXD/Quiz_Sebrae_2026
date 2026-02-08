@@ -14,10 +14,7 @@ public class EnviromentNetworkBehaviour : NetworkBehaviour
     [ClientRpc]
     public void Rpc_Open()
     {
-        foreach (var door in FindObjectsByType<DoorController>(FindObjectsSortMode.None))
-        {
-            door.Open();
-        }
+        EventManager.Instance.OnOpenDoor?.Invoke();
     }
     public void NextPlayer(string message, int index)
     {
