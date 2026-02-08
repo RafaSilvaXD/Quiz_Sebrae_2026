@@ -10,24 +10,40 @@ using UnityEngine.InputSystem;
 
 public class LobbyTotemController : MonoBehaviour
 {
+    [SerializeField] private CanvasGroup _lobbyCanvas;
     private bool _serverFound;
     private IEnumerator _coroutineWaitHost; 
-    [SerializeField] private float _searchServerTime; 
-    private void Start()
+    [SerializeField] private float _searchServerTime;
+    [SerializeField] private GameObject _loopitaSingleGame;
+
+    void Start()
     {
-        SearchServer(); 
+        ShowCanvas(true);
     }
-    private void Update()
+    public void StartGame(int amountPlayer)
     {
-        if (Keyboard.current.digit1Key.wasPressedThisFrame)
+        if(amountPlayer == 1)
         {
-            StartServer(1);
+            StartLocalGame();
         }
-        if (Keyboard.current.digit2Key.wasPressedThisFrame)
+        else
         {
-            StartServer(2);
-        } 
+            StartNetworkGame(amountPlayer);
+        }
+    } 
+
+    private void StartLocalGame()
+    {
+        Debug.Log("Start Local Game");
+        ShowCanvas(false);
+        Instantiate(_loopitaSingleGame);
     }
+
+    private void StartNetworkGame(int amount)
+    {
+        Debug.Log("This will implement soon");
+    }
+
     private void SearchServer()
     {
         _coroutineWaitHost = Coroutine_WaitServer();
@@ -35,18 +51,20 @@ public class LobbyTotemController : MonoBehaviour
     } 
     public void ServerFound(ServerResponse response)
     {
+        Debug.Log("Start Client test");
         NetworkManager.singleton.networkAddress = response.EndPoint.Address.ToString();
         NetworkManager.singleton.StartClient();
         StopCoroutine(_coroutineWaitHost);
     }
+
     public void StartServer(int amount)
     {
+        Debug.Log("Start Server test");
         NetworkManager.singleton.maxConnections = amount;
         NetworkManager.singleton.StartHost();
         var networkDiscovery = FindAnyObjectByType<NetworkDiscovery>();
         networkDiscovery.AdvertiseServer();
-        GetComponent<CanvasGroup>().alpha = 0;
-        GetComponent<CanvasGroup>().blocksRaycasts = false;
+        ShowCanvas(false);
     }
     private IEnumerator Coroutine_WaitServer()
     {
@@ -54,8 +72,7 @@ public class LobbyTotemController : MonoBehaviour
         networkDiscovery.StartDiscovery(); 
         yield return new WaitForSeconds(_searchServerTime); 
         NetworkManager.singleton.networkAddress = GetLocalIPAddress();
-        GetComponent<CanvasGroup>().alpha = 1;
-        GetComponent<CanvasGroup>().blocksRaycasts = true;
+        ShowCanvas(true);
     }
 
     private Func<bool> WaitHostOrDelayStart()
@@ -84,5 +101,12 @@ public class LobbyTotemController : MonoBehaviour
             }
         }
         return localIP;
+    }
+
+    private void ShowCanvas(bool status)
+    {
+        var value = status ? 1 : 0;
+        _lobbyCanvas.alpha = value;
+        GetComponent<CanvasGroup>().blocksRaycasts = status;
     }
 }

@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8975048366071675880}
   - component: {fileID: 4861886335697496778}
   m_Layer: 0
-  m_Name: Loopita
+  m_Name: LoopitaNetwork
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -36,9 +36,9 @@ public class GameplayManagerNetworking : NetworkBehaviour
     public async UniTaskVoid StartGame()
     {
         _questions = await _networkController.GetQuestions();
-        FindAnyObjectByType<BotController>().PlayStartAudio();
+        FindAnyObjectByType<LoopitaNetworkController>().PlayStartAudio();
         await UniTask.Delay(TimeSpan.FromSeconds(55));
-        FindAnyObjectByType<BotController>().Rpc_MovePointB(); 
+        FindAnyObjectByType<LoopitaNetworkController>().Rpc_MovePointB(); 
     }
 
     [Server] 
@@ -83,7 +83,7 @@ public class GameplayManagerNetworking : NetworkBehaviour
             _currentPlayer = 0;
         }
         _currentPlayer++;
-        FindAnyObjectByType<BotController>().Rpc_TalkPlayer(_currentPlayer);
+        FindAnyObjectByType<LoopitaNetworkController>().Rpc_TalkPlayer(_currentPlayer);
         await UniTask.Delay(TimeSpan.FromSeconds(1));
         ShowQuiz();
     }
