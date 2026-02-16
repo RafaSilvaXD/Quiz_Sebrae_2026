@@ -163,4 +163,14 @@ public class NetworkingPlayerController : NetworkBehaviour, IPlayer
             }
         }
     }
+
+    public void ConnectPlayerInGame()
+    {
+        throw new NotImplementedException();
+    }
+
+    public void ReceiveQuestions(List<GameQuestionScriptable> chosenQuestions)
+    {
+        throw new NotImplementedException();
+    }
 }

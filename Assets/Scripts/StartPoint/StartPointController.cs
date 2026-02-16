@@ -51,14 +51,13 @@ public class StartPointController : MonoBehaviour
     
     void OnTriggerEnter(Collider other)
     {
-        Debug.Log("OLA");
         other.TryGetComponent(out IPlayer player);
         if(player == null)
             return;
         
         if (player.Number == _index)
         {
-            Debug.Log("Player Detection");
+            EventManager.Instance.OnConnectPlayerInGame?.Invoke(player, 0);
         }
     }
 }

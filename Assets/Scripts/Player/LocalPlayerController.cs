@@ -1,18 +1,22 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class LocalPlayerController : MonoBehaviour, IPlayer
 {
    [SerializeField] private int _number;
     public int Number => _number;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+
+    private uint _id =0;
+
+    [SerializeField] private List<GameQuestionScriptable> _questions;
+
+    public void ConnectPlayerInGame()
     {
-        
+        throw new System.NotImplementedException();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void ReceiveQuestions(List<GameQuestionScriptable> chosenQuestions)
     {
-        
+        _questions = chosenQuestions;
     }
 }

@@ -119,7 +119,7 @@ public class GameplayManagerNetworking : NetworkBehaviour
         _playersReady++;
         if(_playersReady == NetworkServer.connections.Count)
         {
-            FindAnyObjectByType<TimerController>().StartTime().Forget();
+            //FindAnyObjectByType<TimerController>().StartTime().Forget();
             NextPlayer();
         }
     }
