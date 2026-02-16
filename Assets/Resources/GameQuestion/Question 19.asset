@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15fb65ab725334245a396ef4239478cb, type: 3}
+  m_Name: Question 19
+  m_EditorClassIdentifier: 
+  Question: "O que \xE9 um 'unic\xF3rnio' no mundo das startups?"
+  Answers:
+  - "Uma startup que ainda n\xE3o lan\xE7ou seu produto"
+  - "Uma startup avaliada em mais de 1 bilh\xE3o de d\xF3lares"
+  - Uma empresa que trabalha com tecnologia de realidade aumentada
+  - "Um investidor que financia m\xFAltiplos neg\xF3cio"
+  CorrectAnswer: 1
