@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5026632633999520837}
   - component: {fileID: 1051654194996324203}
   m_Layer: 0
-  m_Name: GameplayManager
+  m_Name: MultiplayerManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -61,7 +61,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneId: 0
-  _assetId: 197285211
+  _assetId: 1864342836
   serverOnly: 0
   visibility: 0
   hasSpawned: 0
