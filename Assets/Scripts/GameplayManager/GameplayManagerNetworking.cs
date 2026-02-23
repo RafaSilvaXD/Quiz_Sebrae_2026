@@ -90,13 +90,13 @@ public class GameplayManagerNetworking : NetworkBehaviour
     [ClientRpc]
     public async void Rpc_Victory()
     {
-        var paths = FindObjectsByType<BridgeController>(FindObjectsSortMode.None).Where(x => x.BridgeIndex != _currentPlayer);
+        /*var paths = FindObjectsByType<BridgeController>(FindObjectsSortMode.None).Where(x => x.BridgeIndex != _currentPlayer);
         foreach (var path in paths) 
         {
             await path.ResetSteps();
         }
         FindAnyObjectByType<VictoryPanelController>().Show().Forget();
-        FindAnyObjectByType<DefeatPanelController>().Show().Forget();
+        FindAnyObjectByType<DefeatPanelController>().Show().Forget();*/
     }
     [Command(requiresAuthority =false)]
     public void Cmd_Defeat()

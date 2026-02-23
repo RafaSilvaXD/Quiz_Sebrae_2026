@@ -7,7 +7,7 @@ public class StartPointController : MonoBehaviour
     private bool _ready;
     [SerializeField] private int _index;
     [SerializeField] private ParticleSystem _particle;
-
+    [SerializeField] private BridgeController _bridgePath;
     void Start()
     {
         StartedPointController(-1);
@@ -58,6 +58,8 @@ public class StartPointController : MonoBehaviour
         if (player.Number == _index)
         {
             EventManager.Instance.OnConnectPlayerInGame?.Invoke(player, 0);
+            player.ConnectPlayerInPath(_bridgePath);
+            gameObject.SetActive(false);
         }
     }
 }
