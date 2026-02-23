@@ -35,6 +35,7 @@ public class LobbyTotemController : MonoBehaviour
     private void StartLocalGame()
     {
         Debug.Log("Start Local Game");
+        EventManager.Instance.OnConnectPlayerInSeasson?.Invoke();
         ShowCanvas(false);
         Instantiate(_loopitaSingleGame);
     }

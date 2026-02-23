@@ -23,7 +23,7 @@ public class EnviromentNetworkBehaviour : NetworkBehaviour
     [ClientRpc]
     public async void Rpc_NextPlayer(string message, int index)
     {
-        var selected = FindObjectsByType<QuizController>(FindObjectsSortMode.None).ToArray();
+        /*var selected = FindObjectsByType<QuizController>(FindObjectsSortMode.None).ToArray();
         foreach (var quiz in selected) 
         {
             if(quiz.Index == index)
@@ -34,7 +34,7 @@ public class EnviromentNetworkBehaviour : NetworkBehaviour
             {
                 quiz.Hidden();
             }
-        }
+        }*/
     }
 
      
@@ -62,8 +62,8 @@ public class EnviromentNetworkBehaviour : NetworkBehaviour
     private void Rpc_NextStep(int index)
     {
 
-        FindObjectsByType<BridgeController>(FindObjectsSortMode.None)
-            .First(x => x.BridgeIndex == index).NextStep();
+        /*FindObjectsByType<BridgeController>(FindObjectsSortMode.None)
+            .First(x => x.BridgeIndex == index).NextStep();*/
     }
     public void ResetSteps()
     {
@@ -78,7 +78,7 @@ public class EnviromentNetworkBehaviour : NetworkBehaviour
     [ClientRpc]
     private async void Rpc_ResetSteps(int index)
     {
-        await FindObjectsByType<BridgeController>(FindObjectsSortMode.None)
-           .First(x => x.BridgeIndex == index).ResetSteps(true);
+        /*await FindObjectsByType<BridgeController>(FindObjectsSortMode.None)
+           .First(x => x.BridgeIndex == index).ResetSteps(true);*/
     }
 }

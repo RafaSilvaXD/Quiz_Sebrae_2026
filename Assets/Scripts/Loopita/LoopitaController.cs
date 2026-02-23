@@ -59,16 +59,13 @@ public class LoopitaController : MonoBehaviour, ILoopitaController
     }
     public void PlayStartAudio()
     {
-         Debug.Log("Start Play Audio: " + _audioSource.isPlaying);
         PlayAsyncAudio(0, OpenInitiaDoor);
     }
 
     private async void PlayAsyncAudio(int audioIndex, Action finishAudio = null)
     {
         _audioSource?.PlayOneShot(_audiosStartRef[audioIndex]);
-        Debug.Log("Play Audio: " + _audioSource.isPlaying);
         await UniTask.WaitUntil(() => !_audioSource.isPlaying);
-        Debug.Log("Finish Audio");
 
         await UniTask.Delay(TimeSpan.FromSeconds(0.4f));
         finishAudio.Invoke();

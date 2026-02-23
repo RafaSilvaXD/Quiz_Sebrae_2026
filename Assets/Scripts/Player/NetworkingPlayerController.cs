@@ -23,12 +23,16 @@ public class NetworkingPlayerController : NetworkBehaviour, IPlayer
     [SerializeField] private InputActionReference _move;
     private CancellationTokenSource _cancellationTextTokenSource;
     public int Number => _number;
+
+    public uint ID => 0;
+
     [SyncVar(hook = nameof(SetViewName))] private string _name;
     [SerializeField] private List<InputActionAsset> m_ActionAssets;  
     [SerializeField] private TextMeshPro _nameView;
     [SerializeField] private GameObject[] _hands;
     [SerializeField] private XRRayInteractor _raycast;
     [SerializeField] private AssetReference _panelRef;
+    [SerializeField] BridgeController _bridgePath;
 
     private void OnDisable()
     {
@@ -164,12 +168,26 @@ public class NetworkingPlayerController : NetworkBehaviour, IPlayer
         }
     }
 
-    public void ConnectPlayerInGame()
+    public void ConnectedPlayerInSeasson()
     {
         throw new NotImplementedException();
     }
 
     public void ReceiveQuestions(List<GameQuestionScriptable> chosenQuestions)
+    {
+        throw new NotImplementedException();
+    }
+
+    public void ConnectPlayerInPath(BridgeController bridgePath)
+    {
+        _bridgePath = bridgePath;
+    }
+
+    public void TeleportTo(Vector3 targetPosition)
+    {
+        throw new NotImplementedException();
+    }
+    public void ReinitializeQuestions()
     {
         throw new NotImplementedException();
     }

@@ -120,7 +120,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 7389960794410008016}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3075411579469006411}
+        m_TargetAssemblyTypeName: TextQuizUIController, Assembly-CSharp
+        m_MethodName: ChosenAnswer
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &3075411579469006409
 GameObject:
   m_ObjectHideFlags: 0
@@ -171,25 +183,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7bc6ba0d666bcd245989caa292df71e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _buttons:
+  _buttonAnswers:
   - {fileID: 3075411580859084251}
   - {fileID: 5220110658640656255}
   - {fileID: 1849249730700318729}
   - {fileID: 5512558912016865623}
-  _text: {fileID: 3075411581329272737}
+  _textAnswers:
+  - {fileID: 3075411580989280723}
+  - {fileID: 881799373017053164}
+  - {fileID: 4033767565733449384}
+  - {fileID: 5905825279460350508}
+  _textQuestion: {fileID: 3075411581329272737}
+  _correctAnswerIndex: 0
   _audioSource: {fileID: -8141636473222525508}
-  _audioPositiveRef:
-    m_AssetGUID: 72f46026b17ad0d408bf7a93fc2fbb99
-    m_SubObjectName: 
-    m_SubObjectType: 
-    m_SubObjectGUID: 
-    m_EditorAssetChanged: 0
-  _audioNegativeRef:
-    m_AssetGUID: 7455fd4a40f49654e93ceb3f7d768934
-    m_SubObjectName: 
-    m_SubObjectType: 
-    m_SubObjectGUID: 
-    m_EditorAssetChanged: 0
+  _audioCorrectAnswer: {fileID: 8300000, guid: 72f46026b17ad0d408bf7a93fc2fbb99, type: 3}
+  _audioWrongAnswer: {fileID: 8300000, guid: 7455fd4a40f49654e93ceb3f7d768934, type: 3}
+  _defaultButtonCollor: {r: 0.19215687, g: 0.16078432, b: 0.45490196, a: 1}
+  _correctButtonCollor: {r: 0, g: 1, b: 0.07236838, a: 1}
+  _wrongButtonCollor: {r: 0.8396226, g: 0.16237983, b: 0.22268237, a: 1}
+  _blinkCount: 20
+  _blinkFrequency: 0.05
 --- !u!82 &-8141636473222525508
 AudioSource:
   m_ObjectHideFlags: 0
@@ -473,7 +486,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 3075411580859084250}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3075411579469006411}
+        m_TargetAssemblyTypeName: TextQuizUIController, Assembly-CSharp
+        m_MethodName: ChosenAnswer
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &3075411580902490624
 GameObject:
   m_ObjectHideFlags: 0
@@ -903,7 +928,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 4092611204410979417}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3075411579469006411}
+        m_TargetAssemblyTypeName: TextQuizUIController, Assembly-CSharp
+        m_MethodName: ChosenAnswer
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &3513578133233170199
 GameObject:
   m_ObjectHideFlags: 0
@@ -1296,7 +1333,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2231444494320097082}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3075411579469006411}
+        m_TargetAssemblyTypeName: TextQuizUIController, Assembly-CSharp
+        m_MethodName: ChosenAnswer
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &9163750037779831899
 GameObject:
   m_ObjectHideFlags: 0
