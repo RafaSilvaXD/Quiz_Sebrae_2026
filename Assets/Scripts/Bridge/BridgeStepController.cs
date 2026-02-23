@@ -1,30 +1,40 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using UnityEditor.Animations;
+using UnityEngine;
 
 public class BridgeStepController:MonoBehaviour
 {
-    private Transform _step;
-    private GlassController _glass;
-    [SerializeField] private int _index;
+    [SerializeField] private GameObject _armature;
+    [SerializeField] private Animator _animatorController;
 
-    private void Awake()
+    public Animator AnimatorController => _animatorController;
+    [SerializeField] private int _stepIndex;
+    [SerializeField] List<Color> _stepColors;
+    [SerializeField] private StepPosition _stepPosition;
+
+    void Start()
     {
-        _glass = GetComponentInChildren<GlassController>();
-    } 
-    public void Drop()
-    {
-        _glass.Drop();
+        _armature.GetComponent<Renderer>().material.color = _stepColors[_stepIndex];
     }
-    public void Restore()
+
+    public void OpenStep()
     {
-        _glass.Restore();
+        _animatorController.SetBool("IsOpen", true);
     }
-    public int Index { get => _index;}
-    public Transform Step { get 
-        {
-            if(_step == null)
-            {
-                _step = transform.GetChild(0);
-            }
-            return _step;
-        } }
+
+    public void CloseStep()
+    {
+        _animatorController.SetBool("IsOpen", false);
+    }
+
+    public void DefineBridgeStepIndex(uint bridgeIndex)
+    {
+        _stepPosition.DefineStepIndex(bridgeIndex);
+    }
+
+    public void ActiveBridgeStepPosition()
+    {
+        _stepPosition.gameObject.SetActive(true);
+        _stepPosition.ShowStepVFX();
+    }
 }

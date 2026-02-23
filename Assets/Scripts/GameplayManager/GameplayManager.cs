@@ -11,6 +11,7 @@ public class GameplayManager : MonoBehaviour
         yield return new WaitUntil(() => EventManager.Instance != null);
         Debug.Log(EventManager.Instance);
         EventManager.Instance.OnConnectPlayerInGame += ConnectedPlayerInGame;
+        EventManager.Instance.OnGetQuestions += GetQuestions;
     }
     void OnEnable()
     {
@@ -22,12 +23,25 @@ public class GameplayManager : MonoBehaviour
         EventManager.Instance.OnConnectPlayerInGame -= ConnectedPlayerInGame;
     }
 
-        private void ConnectedPlayerInGame(IPlayer playerReference, uint  playerId = 0)
+    private void ConnectedPlayerInGame(IPlayer playerReference, uint  playerId = 0)
     {
         if (playerId == 0)
         {
             _localManager.gameObject.SetActive(true);
             _localManager.AddPlayerToSession(playerReference, playerId);
+        }
+        else
+        {
+            _multiplayerManager.gameObject.SetActive(true);
+        }
+    }
+
+    private void GetQuestions(IPlayer playerReference, uint  playerId = 0)
+    {
+        if (playerId == 0)
+        {
+            _localManager.gameObject.SetActive(true);
+            _localManager.GetNewQuestions(playerReference, playerId);
         }
         else
         {

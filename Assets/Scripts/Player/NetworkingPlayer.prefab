@@ -4139,6 +4139,7 @@ MonoBehaviour:
     m_SubObjectType: 
     m_SubObjectGUID: 
     m_EditorAssetChanged: 0
+  _bridgePath: {fileID: 0}
 --- !u!114 &5738532851958848513
 MonoBehaviour:
   m_ObjectHideFlags: 0

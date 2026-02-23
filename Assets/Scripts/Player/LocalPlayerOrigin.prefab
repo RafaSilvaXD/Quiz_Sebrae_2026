@@ -1653,7 +1653,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e6b7ec2c5c2ca44292900e79d98d9a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rb: {fileID: 5550784897579053656}
   _number: 1
+  _questions: []
+  _selectCurrentQuestion: 0
+  _correctAnswers: 0
+  _wrongAnswers: 0
+  _quizController: {fileID: 0}
+  _bridgePath: {fileID: 0}
 --- !u!114 &1249426799418656824
 MonoBehaviour:
   m_ObjectHideFlags: 0

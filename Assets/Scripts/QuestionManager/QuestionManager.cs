@@ -29,6 +29,23 @@ public class QuestionManager : MonoBehaviour
         }
     }
 
+    public void SendNewQuestions(IPlayer playerReference, uint  playerId = 0)
+    {
+        if(_allQuestions.Count == 0)
+        {
+            ReadAllQuestion();
+        }
+
+        if (playerId == 0)
+        {
+            _localQuestion.SortPlayerQuestion(playerId, playerReference, _allQuestions);
+        }
+        else
+        {
+            _multiplayerQuestion.SortPlayerQuestion(playerId, _allQuestions);
+        } 
+    }
+
     private void ReadAllQuestion()
     {
         var questionsOrigin = Resources.LoadAll<GameQuestionScriptable>(PATH);
@@ -38,6 +55,7 @@ public class QuestionManager : MonoBehaviour
             GameQuestionScriptable newQuestion = new GameQuestionScriptable();
             newQuestion.name = quest.name;
             newQuestion.Question = quest.Question;
+            newQuestion.Answers = quest.Answers;
             newQuestion.CorrectAnswer = quest.CorrectAnswer;
             _allQuestions.Add(newQuestion);
         }
