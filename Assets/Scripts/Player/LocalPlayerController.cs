@@ -22,7 +22,6 @@ public class LocalPlayerController : MonoBehaviour, IPlayer
     IEnumerator EnableCoroutine()
     {
         yield return new WaitUntil(() => EventManager.Instance != null);
-        Debug.Log(EventManager.Instance);
         EventManager.Instance.OnConnectPlayerInSeasson += ConnectedPlayerInSeasson;
         EventManager.Instance.OnQuestionAnswer += QuestionAnswered;
         EventManager.Instance.OnShowQuestion += ShowedQuestion;

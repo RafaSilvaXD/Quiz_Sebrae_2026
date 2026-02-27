@@ -14,7 +14,6 @@ public class DoorController : MonoBehaviour
 
     void OnEnable()
     {
-        Debug.Log(EventManager.Instance);
         EventManager.Instance.OnOpenDoor += OpenedDoor;
     }
 
