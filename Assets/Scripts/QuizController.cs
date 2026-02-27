@@ -1,4 +1,4 @@
-using System;
+ using System;
 using System.Collections;
 using System.Linq;
 using Cysharp.Threading.Tasks;
@@ -45,6 +45,7 @@ public class QuizController : MonoBehaviour
     {
         _canvasGroup.alpha = 0;
         _canvasGroup.interactable = false;
+        _canvasGroup.blocksRaycasts = false;
 
     }
 
@@ -52,6 +53,7 @@ public class QuizController : MonoBehaviour
     {
         _canvasGroup.alpha = 1;
         _canvasGroup.interactable = true;
+         _canvasGroup.blocksRaycasts = true;
     }
     public void SetupQuestion(GameQuestionScriptable question)
     {
