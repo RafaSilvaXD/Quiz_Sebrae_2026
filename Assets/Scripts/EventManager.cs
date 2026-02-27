@@ -13,7 +13,7 @@ public class EventManager : MonoBehaviour
     public Action<IPlayer, uint> OnConnectPlayerInGame;
     public Action<IPlayer, uint> OnGetQuestions;
     public Action OnConnectPlayerInSeasson;
-
+    public Action OnFinishGame;
     public Action<bool> OnQuestionAnswer;
 
     public Action<int> OnOpenStep;

@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Linq;
 using Cysharp.Threading.Tasks;
 using Mirror;
@@ -19,11 +20,28 @@ public class QuizController : MonoBehaviour
     {
         Hidden();
     }
+
+    IEnumerator EnableCoroutine()
+    {
+        yield return new WaitUntil(() => EventManager.Instance != null);
+        EventManager.Instance.OnFinishGame += Hidden;
+    }
+    void OnEnable()
+    {
+        StartCoroutine(EnableCoroutine());
+    }
+
+    void OnDisable()
+    {
+        EventManager.Instance.OnFinishGame -= Hidden;
+    }
+
     public void SetIndex(int index)
     {
         _index = index;
     }
-    public void Hidden()
+
+    private void Hidden()
     {
         _canvasGroup.alpha = 0;
         _canvasGroup.interactable = false;
