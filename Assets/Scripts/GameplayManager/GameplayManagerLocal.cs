@@ -7,13 +7,17 @@ public class GameplayManagerLocal : MonoBehaviour
     [SerializeField] private TimerController _timer;
     
     [SerializeField] private FallPlace _fallPlace;
+    [SerializeField] private LaunchController _launchController;
     [SerializeField] private Transform _restartPosition;
     [SerializeField] private DefeatPanelController _defeatPanel;
+    [SerializeField] private VictoryPanelController _victoryPanel;
+
     private IPlayer _playerReference;
 
     void Start()
     {
         _fallPlace.DefineAction(PlayerFallAction);
+        _launchController.DefineAction(PlayerVictory);
     }
 
     private void PlayerFallAction()
@@ -39,5 +43,10 @@ public class GameplayManagerLocal : MonoBehaviour
         EventManager.Instance.OnFinishGame?.Invoke();
         _playerReference.TeleportTo(_restartPosition.position);
         _defeatPanel.Show();
+    }
+
+    private void PlayerVictory()
+    {
+        _victoryPanel.Show();
     }
 }

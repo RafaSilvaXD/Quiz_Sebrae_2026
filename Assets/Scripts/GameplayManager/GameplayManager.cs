@@ -9,7 +9,6 @@ public class GameplayManager : MonoBehaviour
     IEnumerator EnableCoroutine()
     {
         yield return new WaitUntil(() => EventManager.Instance != null);
-        Debug.Log(EventManager.Instance);
         EventManager.Instance.OnConnectPlayerInGame += ConnectedPlayerInGame;
         EventManager.Instance.OnGetQuestions += GetQuestions;
     }
