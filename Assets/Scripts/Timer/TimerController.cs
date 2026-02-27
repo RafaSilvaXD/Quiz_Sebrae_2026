@@ -9,12 +9,13 @@ using UnityEngine.Events;
 
 public class TimerController : MonoBehaviour
 {
-    public UnityEvent OnFinishedTime;
+    private Action _onFinishedTimeCallback;
     [SerializeField] private float _totalTimeSeconds;
     [SerializeField] private TextMeshProUGUI _timerView;
 
-     public void StartTime()
+     public void StartTime(Action FinishAction)
     {
+        _onFinishedTimeCallback = FinishAction;
         TimerWork();
     }
 
@@ -28,12 +29,15 @@ public class TimerController : MonoBehaviour
             _timerView.SetText($"{timespan.Minutes:D2}:{timespan.Seconds:D2}");
             await UniTask.NextFrame();
         }
+
+        _timerView.SetText($"00:00");
+        _onFinishedTimeCallback?.Invoke();
     }
 
     private void FinishTimer()
     {
         _timerView.SetText($"00:00");
         FindAnyObjectByType<GameplayManagerNetworking>().Cmd_Defeat();
-        OnFinishedTime?.Invoke();
+        _onFinishedTimeCallback?.Invoke();
     }
 }
