@@ -8,6 +8,7 @@ public class GameplayManagerLocal : MonoBehaviour
     
     [SerializeField] private FallPlace _fallPlace;
     [SerializeField] private Transform _restartPosition;
+    [SerializeField] private DefeatPanelController _defeatPanel;
     private IPlayer _playerReference;
 
     void Start()
@@ -25,11 +26,18 @@ public class GameplayManagerLocal : MonoBehaviour
     {
         _playerReference = playerReference;
         _questionManager.ManagerPlayerQuestion(playerReference, playerId);
-        _timer.StartTime();
+        _timer.StartTime(FinishTimer);
     }
 
     public void GetNewQuestions(IPlayer playerReference, uint  playerId = 0)
     {
          _questionManager.SendNewQuestions(playerReference, playerId);
+    }
+
+    private void FinishTimer()
+    {
+        EventManager.Instance.OnFinishGame?.Invoke();
+        _playerReference.TeleportTo(_restartPosition.position);
+        _defeatPanel.Show();
     }
 }
