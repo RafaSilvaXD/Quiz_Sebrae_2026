@@ -48,5 +48,6 @@ public class GameplayManagerLocal : MonoBehaviour
     private void PlayerVictory()
     {
         _victoryPanel.Show();
+        _timer.StopTimer();
     }
 }
