@@ -13,6 +13,7 @@ public class GameplayManagerLocal : MonoBehaviour
     [SerializeField] private VictoryPanelController _victoryPanel;
 
     private IPlayer _playerReference;
+    private bool _gamingIsWorking;
 
     void Start()
     {
@@ -20,10 +21,16 @@ public class GameplayManagerLocal : MonoBehaviour
         _launchController.DefineAction(PlayerVictory);
     }
 
-    private void PlayerFallAction()
+    private void PlayerFallAction(IPlayer player)
     {
-        _playerReference.TeleportTo(_restartPosition.position);
-        _playerReference.ReinitializeQuestions();
+        if (_playerReference == player)
+        {
+            FinishGame(_restartPosition.position);
+        }
+        else
+        {
+            player.TeleportTo(_restartPosition.position);
+        }
     }
 
     public void AddPlayerToSession(IPlayer playerReference, uint  playerId = 0)
@@ -40,14 +47,21 @@ public class GameplayManagerLocal : MonoBehaviour
 
     private void FinishTimer()
     {
-        EventManager.Instance.OnFinishGame?.Invoke();
-        _playerReference.TeleportTo(_restartPosition.position);
-        _defeatPanel.Show();
+        FinishGame(_restartPosition.position);
     }
 
     private void PlayerVictory()
     {
-        _victoryPanel.Show();
+        _victoryPanel.Show().Forget();
         _timer.StopTimer();
+    }
+
+    private void FinishGame(Vector3 teleportPosition)
+    {
+        EventManager.Instance.OnFinishGame?.Invoke();
+        _playerReference.TeleportTo(teleportPosition);
+        _defeatPanel.Show().Forget();
+        _timer.ResetTimer();
+        _playerReference = null;
     }
 }
