@@ -50,4 +50,10 @@ public class TimerController : MonoBehaviour
         _cts.Cancel();
         _cts.Dispose();
     }
+
+    public void ResetTimer()
+    {
+        _timerView.SetText($"00:00");
+        StopTimer();
+    }
 }
