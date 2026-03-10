@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15fb65ab725334245a396ef4239478cb, type: 3}
   m_Name: Question 20
   m_EditorClassIdentifier: 
-  Question: "Qual dessas tecnologias \xE9 usada na Realidade Virtual?"
+  Question: "Uma startup unic\xF3rnio \xE9:"
   Answers:
-  - "\xD3culos VR"
-  - "Calculadoras cient\xEDficas"
-  - "Telesc\xF3pios espaciais"
-  - "C\xE2meras anal\xF3gicas"
-  CorrectAnswer: 0
+  - Empresa premiada
+  - "Startup com atua\xE7\xE3o global"
+  - "Startup avaliada em mais de 1 bilh\xE3o de d\xF3lares"
+  - Empresa com mais de 10 anos
+  CorrectAnswer: 2

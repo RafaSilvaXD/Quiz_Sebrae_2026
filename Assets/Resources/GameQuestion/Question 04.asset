@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15fb65ab725334245a396ef4239478cb, type: 3}
   m_Name: Question 04
   m_EditorClassIdentifier: 
-  Question: O que os visitantes podem esperar ao conhecer as startups no evento?
+  Question: "O que \xE9 escalabilidade?"
   Answers:
-  - "Apenas palestras e apresenta\xE7\xF5es"
-  - "Intera\xE7\xE3o direta com solu\xE7\xF5es inovadoras e oportunidades de networking"
-  - "Exposi\xE7\xE3o de produtos antigos"
-  - "Cursos de forma\xE7\xE3o t\xE9cnica"
+  - Aumentar equipe rapidamente
+  - "Crescer receita sem crescer custos na mesma propor\xE7\xE3o"
+  - "Expandir para outro pa\xEDs"
+  - "Criar novos produtos todo m\xEAs"
   CorrectAnswer: 1

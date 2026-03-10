@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15fb65ab725334245a396ef4239478cb, type: 3}
   m_Name: Question 18
   m_EditorClassIdentifier: 
-  Question: O que significa a sigla IoT?
+  Question: "O que \xE9 blockchain?"
   Answers:
-  - Internet das Coisas
-  - "Intelig\xEAncia Operacional Total"
-  - "Inova\xE7\xE3o e Organiza\xE7\xE3o Tecnol\xF3gica"
-  - Investimento Online Total
-  CorrectAnswer: 0
+  - Tipo de criptomoeda
+  - Banco digital
+  - Aplicativo financeiro
+  - Tecnologia de registro descentralizado
+  CorrectAnswer: 3

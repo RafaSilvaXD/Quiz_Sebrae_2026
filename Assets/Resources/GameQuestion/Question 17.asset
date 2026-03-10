@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15fb65ab725334245a396ef4239478cb, type: 3}
   m_Name: Question 17
   m_EditorClassIdentifier: 
-  Question: O que caracteriza um investidor-anjo?
+  Question: "O que \xE9 transforma\xE7\xE3o digital?"
   Answers:
-  - Investe apenas em grandes empresas
-  - Empresta dinheiro com juros altos
-  - Atua apenas como consultor
-  - Fornece capital e mentoria para startups
-  CorrectAnswer: 3
+  - Criar redes sociais
+  - Comprar computadores
+  - Integrar tecnologia para melhorar processos e resultados
+  - Automatizar apenas o financeiro
+  CorrectAnswer: 2

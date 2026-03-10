@@ -12,11 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15fb65ab725334245a396ef4239478cb, type: 3}
   m_Name: Question 08
   m_EditorClassIdentifier: 
-  Question: "Bruno Stefani, palestrante do evento, foi diretor global de inova\xE7\xE3o
-    de qual empresa?"
+  Question: O que faz uma aceleradora?
   Answers:
-  - Google
-  - Microsoft
-  - AB InBev
-  - Amazon
+  - Compra startups promissoras
+  - Oferece apenas cursos online
+  - "Apoia startups com mentoria, conex\xE3o e investimento"
+  - Registra patentes
   CorrectAnswer: 2

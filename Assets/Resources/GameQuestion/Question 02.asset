@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15fb65ab725334245a396ef4239478cb, type: 3}
   m_Name: Question 02
   m_EditorClassIdentifier: 
-  Question: "O Startup Day \xE9 promovido por qual institui\xE7\xE3o?"
+  Question: "O que \xE9 MVP?"
   Answers:
-  - Porto Digital
-  - SEBRAE
-  - Campus Party
-  - "Minist\xE9rio da Ci\xEAncia e Tecnologia"
-  CorrectAnswer: 1
+  - "Vers\xE3o inicial para testar hip\xF3teses com o menor esfor\xE7o poss\xEDvel"
+  - Produto final com todas as funcionalidades
+  - "Estrat\xE9gia de marketing digital"
+  - Modelo de investimento
+  CorrectAnswer: 0

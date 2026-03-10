@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15fb65ab725334245a396ef4239478cb, type: 3}
   m_Name: Question 06
   m_EditorClassIdentifier: 
-  Question: "Qual \xE9 o principal desafio que as startups enfrentam?"
+  Question: "O que \xE9 um pitch?"
   Answers:
-  - Falta de ideias
-  - Dificuldade em encontrar investidores e validar seus produtos
-  - Excesso de lucro
-  - "Pouca concorr\xEAncia no mercado"
-  CorrectAnswer: 1
+  - "Apresenta\xE7\xE3o curta e objetiva do neg\xF3cio"
+  - Plano financeiro anual
+  - "Documento jur\xEDdico"
+  - "Estrat\xE9gia de vendas"
+  CorrectAnswer: 0

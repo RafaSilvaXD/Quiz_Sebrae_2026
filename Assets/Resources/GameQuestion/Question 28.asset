@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 15fb65ab725334245a396ef4239478cb, type: 3}
-  m_Name: Question 05
+  m_Name: Question 28
   m_EditorClassIdentifier: 
-  Question: "O que \xE9 valida\xE7\xE3o de mercado?"
+  Question: "O que \xE9 Product-Market Fit?"
   Answers:
-  - Registrar a marca
-  - Conseguir seguidores nas redes
-  - Abrir empresa formalmente
-  - "Testar se clientes realmente pagariam pela solu\xE7\xE3o"
-  CorrectAnswer: 3
+  - "Produto com pre\xE7o baixo"
+  - Produto com boa embalagem
+  - Quando o produto atende fortemente a demanda do mercado
+  - Produto registrado
+  CorrectAnswer: 2
