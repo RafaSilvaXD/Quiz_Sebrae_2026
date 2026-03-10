@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15fb65ab725334245a396ef4239478cb, type: 3}
   m_Name: Question 09
   m_EditorClassIdentifier: 
-  Question: "Qual palestrante do evento \xE9 ex-ministro da educa\xE7\xE3o?"
+  Question: "O que \xE9 UX?"
   Answers:
-  - "Mendon\xE7a Filho"
-  - Dilson Cavalcanti
-  - Paulo Muniz
-  - "Gen\xE9sio Gomes da Cruz"
-  CorrectAnswer: 0
+  - "Estrat\xE9gia de vendas"
+  - "Experi\xEAncia do usu\xE1rio com produto ou servi\xE7o"
+  - "Tipo de programa\xE7\xE3o"
+  - ' Ferramenta de design'
+  CorrectAnswer: 1

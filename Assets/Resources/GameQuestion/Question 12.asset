@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15fb65ab725334245a396ef4239478cb, type: 3}
   m_Name: Question 12
   m_EditorClassIdentifier: 
-  Question: O que significa MVP no contexto de startups?
+  Question: O que significa ROI?
   Answers:
-  - Produto mais valioso
-  - "Produto m\xEDnimo vi\xE1vel"
-  - "M\xE1quina virtual programada"
-  - "M\xE9todo de valida\xE7\xE3o de produto"
+  - Receita Operacional Interna
+  - Retorno sobre investimento
+  - "Registro Oficial de Inova\xE7\xE3o"
+  - Resultado Operacional Integrado
   CorrectAnswer: 1
