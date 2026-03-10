@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15fb65ab725334245a396ef4239478cb, type: 3}
   m_Name: Question 03
   m_EditorClassIdentifier: 
-  Question: "Qual \xE9 o foco principal das startups participantes do evento?"
+  Question: "O que significa \u201Cpivotar\u201D em uma startup?"
   Answers:
-  - "Vender produtos f\xEDsicos"
-  - "Apresentar solu\xE7\xF5es inovadoras e conectar-se com o ecossistema"
-  - "Realizar workshops t\xE9cnicos"
-  - Promover eventos culturais
-  CorrectAnswer: 1
+  - Encerrar as atividades
+  - "Mudar completamente o p\xFAblico-alvo sem an\xE1lise"
+  - "Ajustar a estrat\xE9gia com base em aprendizados"
+  - "Trocar todos os s\xF3cios"
+  CorrectAnswer: 2

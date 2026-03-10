@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15fb65ab725334245a396ef4239478cb, type: 3}
   m_Name: Question 13
   m_EditorClassIdentifier: 
-  Question: "Qual dessas tecnologias est\xE1 mais associada \xE0 Ind\xFAstria 4.0?"
+  Question: "O que \xE9 cultura de inova\xE7\xE3o?"
   Answers:
-  - "Impress\xE3o 3D, Internet das Coisas e Intelig\xEAncia Artificial"
-  - "Tel\xE9grafos e computadores antigos"
-  - "Carros movidos a carv\xE3o"
-  - Televisores de tubo
+  - "Incentivar experimenta\xE7\xE3o e aprendizado cont\xEDnuo"
+  - "Criar um laborat\xF3rio tecnol\xF3gico"
+  - Trabalhar apenas com tecnologia
+  - Investir em startups
   CorrectAnswer: 0

@@ -12,11 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15fb65ab725334245a396ef4239478cb, type: 3}
   m_Name: Question 10
   m_EditorClassIdentifier: 
-  Question: "Quem \xE9 reitor da Asces-Unita e estar\xE1 no painel sobre inova\xE7\xE3o
-    e educa\xE7\xE3o?"
+  Question: "O que \xE9 Intelig\xEAncia Artificial?"
   Answers:
-  - "Jo\xE3o Mois\xE9s"
-  - Paulo Muniz
-  - Heraldo Ourem
-  - "Concei\xE7\xE3o Moraes"
-  CorrectAnswer: 1
+  - "Sistemas capazes de simular decis\xF5es humanas"
+  - "Rob\xF4s industriais"
+  - Computadores de alto desempenho
+  - "Softwares de edi\xE7\xE3o"
+  CorrectAnswer: 0

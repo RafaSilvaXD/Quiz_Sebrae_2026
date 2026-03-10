@@ -12,11 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15fb65ab725334245a396ef4239478cb, type: 3}
   m_Name: Question 07
   m_EditorClassIdentifier: 
-  Question: O que os visitantes podem aprender ao conversar com as startups no evento?
+  Question: "Uma fintech \xE9:"
   Answers:
-  - "Somente informa\xE7\xF5es sobre os produtos das startups"
-  - "Experi\xEAncias sobre inova\xE7\xE3o, desafios do empreendedorismo e transforma\xE7\xE3o
-    de ideias em neg\xF3cios"
-  - Exclusivamente sobre modelos de financiamento para startups
-  - "Conceitos b\xE1sicos de marketing tradicional"
+  - Uma empresa de marketing
+  - Uma empresa de tecnologia aplicada ao setor financeiro
+  - Um banco tradicional digitalizado
+  - Uma startup educacional
   CorrectAnswer: 1

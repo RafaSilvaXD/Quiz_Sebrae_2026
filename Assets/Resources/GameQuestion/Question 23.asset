@@ -10,12 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 15fb65ab725334245a396ef4239478cb, type: 3}
-  m_Name: Question 05
+  m_Name: Question 23
   m_EditorClassIdentifier: 
-  Question: "O que \xE9 valida\xE7\xE3o de mercado?"
+  Question: "Uma startup percebe que os usu\xE1rios usam apenas 20% das funcionalidades
+    do app. A melhor decis\xE3o estrat\xE9gica \xE9:"
   Answers:
-  - Registrar a marca
-  - Conseguir seguidores nas redes
-  - Abrir empresa formalmente
-  - "Testar se clientes realmente pagariam pela solu\xE7\xE3o"
-  CorrectAnswer: 3
+  - "Aumentar o pre\xE7o"
+  - Investir apenas em marketing
+  - Focar em melhorar as funcionalidades mais usadas
+  - "Adicionar mais fun\xE7\xF5es novas"
+  CorrectAnswer: 2

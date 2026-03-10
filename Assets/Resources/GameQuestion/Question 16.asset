@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15fb65ab725334245a396ef4239478cb, type: 3}
   m_Name: Question 16
   m_EditorClassIdentifier: 
-  Question: O que faz uma aceleradora?
+  Question: "O que \xE9 um ecossistema de inova\xE7\xE3o?"
   Answers:
-  - Investe diretamente em startups
-  - "\"Oferece suporte para startups crescerem r\xE1pido"
-  - "Apenas fornece empr\xE9stimos"
-  - "Cria planos de neg\xF3cios para grandes empresas"
+  - Grupo de startups concorrentes
+  - Rede de atores como startups, universidades e investidores
+  - "Parque tecnol\xF3gico privado"
+  - Empresa multinacional
   CorrectAnswer: 1

@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15fb65ab725334245a396ef4239478cb, type: 3}
   m_Name: Question 14
   m_EditorClassIdentifier: 
-  Question: "O que \xE9 um pitch no mundo das startups?"
+  Question: "O que \xE9 prototipagem?"
   Answers:
-  - "Um rob\xF4 de atendimento ao cliente"
-  - "Uma ferramenta de gest\xE3o de tempo"
-  - Uma plataforma de recrutamento
-  - "Uma apresenta\xE7\xE3o r\xE1pida para vender uma ideia"
-  CorrectAnswer: 3
+  - Finalizar o produto
+  - "Criar vers\xE3o inicial para testar conceito"
+  - Registrar patente
+  - "Fazer campanha de lan\xE7amento"
+  CorrectAnswer: 1

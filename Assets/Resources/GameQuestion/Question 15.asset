@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15fb65ab725334245a396ef4239478cb, type: 3}
   m_Name: Question 15
   m_EditorClassIdentifier: 
-  Question: "O que \xE9 o Vale do Sil\xEDcio?"
+  Question: "O que \xE9 investimento anjo?"
   Answers:
-  - "Um parque de divers\xF5es para startup"
-  - Uma marca de computadores inovadores
-  - "Uma regi\xE3o nos EUA conhecida por suas empresas de tecnologia"
-  - "Um laborat\xF3rio de desenvolvimento de vacinas"
+  - "Empr\xE9stimo banc\xE1rio"
+  - "Recursos p\xFAblicos n\xE3o reembols\xE1veis"
+  - "Capital de pessoa f\xEDsica para est\xE1gio inicial"
+  - Financiamento coletivo
   CorrectAnswer: 2
