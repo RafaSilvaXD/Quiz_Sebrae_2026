@@ -21,7 +21,7 @@ public class AdvertisingController : MonoBehaviour
         {
             await UniTask.Delay(TimeSpan.FromSeconds(_timePerAD));
             count++;
-            if(count >= _advertisings.Length-1)
+            if(count >= _advertisings.Length)
             {
                 count = 0;
             }
