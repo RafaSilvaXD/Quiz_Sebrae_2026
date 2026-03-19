@@ -5,6 +5,8 @@ using System.Net.NetworkInformation;
 using System.Net.Sockets; 
 using Mirror;
 using Mirror.Discovery;
+using TMPro;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -15,9 +17,12 @@ public class LobbyTotemController : MonoBehaviour
     private IEnumerator _coroutineWaitHost; 
     [SerializeField] private float _searchServerTime;
     [SerializeField] private GameObject _loopitaSingleGame;
+    [SerializeField] private TextMeshProUGUI _gameVersion;
+    [SerializeField] private const string DEFAULT_VERSION_TEXT = "Game Version: ";
 
     void Start()
     {
+        _gameVersion.text = DEFAULT_VERSION_TEXT + PlayerSettings.bundleVersion;
         ShowCanvas(true);
     }
     public void StartGame(int amountPlayer)
